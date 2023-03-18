@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="side-nav d-flex h-100">
+ 
+            <div class="side-options w-75 h-100 bg-black d-flex flex-column justify-content-between">
+                <div class="navs">
+                    <ul class="list-unstyled p-5">
+                        <li id="search" class="py-3 position-relative"><a  class="text-decoration-none text-white" >Search</a></li>
+                        <li id="categories" class="py-3 position-relative"><a  class="text-decoration-none text-white" >Categories</a></li>
+                        <li id="area" class="py-3 position-relative"><a  class="text-decoration-none text-white" >Area</a></li>
+                        <li id ="ing" class="py-3 position-relative"><a  class="text-decoration-none text-white" >Ingredients</a></li>
+                        <li id="contact" class="py-3 position-relative"><a  class="text-decoration-none text-white" >Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="m-2 text-white">
+                    <div class="text-center">
+                        <a href="" class="text-decoration-none text-white"> <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="" class="text-decoration-none text-white">
+                            <i class="fa-brands fa-twitter mx-2"></i>
+                        </a>
+                        <a href="" class="text-decoration-none text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="mt-2">BasmaInc © 2023 All Rights Reserved.</p>
+                </div>
+            </div>
+
+
+
+            <div class="small-side d-flex flex-column align-items-center justify-content-between h-100 py-3 px-2 bg-white">
+                <img src="./Assets/logo.png" class="logo" alt="">
+                <i class="fa-solid fa-bars fa-2x menu-btn"></i>
+                <div class="mb-5 d-flex flex-column">
+                    <i class="fa-solid fa-share pb-2"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="all-sections">
+            <div class="sections main-content my-2">
+                <div class="container p-5">
+                    <div class="row g-4 my-3" id="search-input">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Search By Name.." id="s-name"/>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" class="col-md-6 form-control" maxlength="1" placeholder="Search By First Letter.." id="s-letter"/>
+
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="row g-4" id="meals">
+                    <!-- <div class="col-md-3">
+                        <div class="card position-relative overflow-hidden border-0">
+                            <img src="${result[i].strMealThumb}" class="w-100" alt="">
+                            <div class="layer position-absolute bottom-0 start-0 end-0 bg-white opacity-50 rounded-2">
+                                <h2 class="d-flex justify-content-center align-items-center h-100">${result[i].strMeal}</h2>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>          
+
+            </div>
+
+            <div class="sections details-content position-absolute top-0 bottom-0 start-0 end-0 bg-black">
+                <div class="container py-5">
+                    <div class="row" id="details-data">
+                        <!-- <div class="col-md-4">
+                            <img src="./Assets/work-5.jpg" class="w-100" alt="">
+                            <p class="text-center m-2">Food Name</p>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h2 class="display-6">
+                                Instructions
+                            </h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores recusandae explicabo deserunt itaque. Cupiditate, ad aut? Eos, nam voluptas obcaecati dignissimos doloribus dolore perferendis temporibus magnam nemo, possimus saepe reiciendis. Repellendus quia blanditiis cupiditate, adipisci odit sapiente officia vitae corrupti voluptatum sit aliquid excepturi mollitia architecto, iusto doloremque modi!
+                            </p>
+
+                            <h2 class="display-5">
+                                Area:
+                            </h2>
+
+                            <h2 class="display-5">
+                                Category:
+                            </h2>
+
+                            <h2 class="display-5">
+                                Recipes :
+                            </h2>
+
+                            <div class="d-flex">
+                                <span class="p-2 bg-info text-bg-light">text1</span>
+                                <span class="p-2 bg-info text-bg-light">text2</span>
+                                <span class="p-2 bg-info text-bg-light">text3</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <span class="p-2 bg-warning text-bg-light">text1</span>
+                                <span class="p-2 bg-warning text-bg-light">text2</span>
+                                <span class="p-2 bg-warning text-bg-light"></span>
+                            </div>
+
+                            <button class="btn bg-danger">Youtube</button>
+                            <button class="btn bg-success">Source</button>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="sections categories-section my-5">
+                <div class="row g-4" id="categories-row">
+                    <!-- <div class="col-md-3">
+                        <div class="card position-relative overflow-hidden border-0">
+                            <img src="" class="w-100" alt="">
+                            <div class="layer position-absolute bottom-0 start-0 end-0 bg-white opacity-50 rounded-2">
+                                <div class="d-flex flex-column justify-content-start align-items-center">
+                                    <h2 class=""></h2>
+                                    <h2 class=""></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>  
+            </div>
+
+            <div class="sections area-section my-5">
+                <div class="row g-4" id="area-row">
+                    <!-- <div class="col-md-3">
+                        <div class="card position-relative overflow-hidden border-0">
+                            <img src="" class="w-100" alt="">
+                            <h3></h3>
+                        </div>
+                    </div> -->
+                </div>  
+            </div>
+
+            <div class="sections ing-section my-5">
+                <div class="row g-4" id="ing-row">
+                    <!-- <div class="col-md-3">
+                        <div class="card position-relative overflow-hidden border-0">
+                            <img src="" class="w-100" alt="">
+                            <h3></h3>
+                        </div>
+                    </div> -->
+                </div>  
+            </div>
+
+            <div class="sections contact-section my-5">
+                <div class="container">
+                    <div class="row align-content-center justify-content-center g-4 p-5">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Name" id="c-name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Email" id="c-email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" placeholder="Phone" id="c-phone">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" placeholder="Age" id="c-age">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" placeholder="Password" id="c-password">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" placeholder="Re-Password" id="c-repassword">
+                        </div>
+
+                        <div class="d-flex mx-auto">
+                            <button class="btn btn-outline-danger align-items-center" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="module" src="./js/ui.module.js"></script>
+</body>
+
+</html>
